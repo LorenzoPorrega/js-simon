@@ -28,8 +28,23 @@
     </header>
     <main>
         <div class="container main-container mt-5 text-center">
-            <h1 class="fw-bold mb-5">COUNTDOWN ALL'INIZIO DELLA LEZIONE DI DOMANI</h1>
-            <div class="block-container fs-2 fw-bold">
+            <h1 class="fw-bold mb-5 text-decoration-underline text-danger heading"></h1>
+            <div class="block-container fs-1 fw-bold mb-5"></div>
+            <h1 class="fw-bold mb-5 text-decoration-underline heading">OPPURE SELEZIONE UNA DATA CUSTOM</h1>
+            <div class="row">
+                <div class="col-6">
+                    <label>
+                        <span class="d-block fw-bold mb-1 fs-4">Seleziona la data personale:</span>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <input type="date" id="selected-date" name="trip-start">
+                            <button type="button" class="btn btn-info ms-2">Calcola</button>
+                        </div>
+                    </label>
+                </div>
+                <div class="col-6 selected-date-box">
+                    <span class="d-block fw-bold mb-1 fs-4">Alla data selezionata <span class="manca-no"></span>:</span>
+                    <div class="custom-timer d-flex align-items-center justify-content-center"></div>
+                </div>
             </div>
         </div>
     </main>
